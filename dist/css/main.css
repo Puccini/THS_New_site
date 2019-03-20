@@ -381,7 +381,7 @@ main#home h1 {
 }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
+  main#home {
     margin-top: 10vh;
   }
   .projects {
