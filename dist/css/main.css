@@ -176,6 +176,10 @@ header {
   color: #ee1a4f;
 }
 
+.text-tertiary {
+  color: #ff6a06fb;
+}
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
@@ -242,6 +246,21 @@ main#home h1 {
   transition: all 0.5s ease-out;
 }
 
+.prices {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.prices img {
+  width: 100%;
+  border: 3px #fff solid;
+}
+.prices img:hover {
+  opacity: 0.5;
+  border-color: #ee1a4f;
+  transition: all 0.5s ease-out;
+}
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -302,10 +321,16 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  .prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .prices {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -350,6 +375,9 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .prices {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -357,6 +385,9 @@ main#home h1 {
     margin-top: 10vh;
   }
   .projects {
+    grid-template-columns: 1fr;
+  }
+  .prices {
     grid-template-columns: 1fr;
   }
 }
