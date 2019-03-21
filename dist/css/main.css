@@ -177,7 +177,7 @@ header {
 }
 
 .text-tertiary {
-  color: #ff6a06fb;
+  color: #e08f25fb;
 }
 
 main {
@@ -199,6 +199,37 @@ main#home {
 }
 main#home h1 {
   margin-top: 20vh;
+}
+
+.cost-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "price1 price2 price3";
+  grid-template: repeat(3, 1fr);
+}
+.cost-info .bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #ee1a4f 3px solid;
+}
+.cost-info .bio {
+  grid-area: bio;
+}
+.cost-info .price-1 {
+  grid-area: price1;
+}
+.cost-info .price-2 {
+  grid-area: price2;
+}
+.cost-info .price-3 {
+  grid-area: price3;
+}
+.cost-info .price {
+  text-align: center;
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #ee1a4f 5px solid;
 }
 
 .about-info {
@@ -226,6 +257,7 @@ main#home h1 {
   grid-area: job3;
 }
 .about-info .job {
+  text-align: center;
   background: #515151;
   padding: 0.5rem;
   border-bottom: #ee1a4f 5px solid;
@@ -241,21 +273,6 @@ main#home h1 {
   border: 3px #fff solid;
 }
 .projects img:hover {
-  opacity: 0.5;
-  border-color: #ee1a4f;
-  transition: all 0.5s ease-out;
-}
-
-.prices {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-.prices img {
-  width: 100%;
-  border: 3px #fff solid;
-}
-.prices img:hover {
   opacity: 0.5;
   border-color: #ee1a4f;
   transition: all 0.5s ease-out;
@@ -305,7 +322,7 @@ main#home h1 {
 }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #f0b7b7;
   color: #333;
 }
 
@@ -321,16 +338,10 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
-  .prices {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .prices {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -372,10 +383,13 @@ main#home h1 {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
+
+  .cost-info {
+    grid-template-areas: "price1" "price2" "price3";
+    grid-template-columns: 1fr;
   }
-  .prices {
+
+  .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -385,9 +399,6 @@ main#home h1 {
     margin-top: 10vh;
   }
   .projects {
-    grid-template-columns: 1fr;
-  }
-  .prices {
     grid-template-columns: 1fr;
   }
 }
