@@ -114,6 +114,10 @@
   transition-delay: 0.4s;
 }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -322,7 +326,7 @@ main#home h1 {
 }
 
 .btn-light {
-  background: #f0b7b7;
+  background: #e7e2e2;
   color: #333;
 }
 
