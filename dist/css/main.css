@@ -330,6 +330,29 @@ main#home h1 {
   color: #333;
 }
 
+button {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+button:focus {
+  outline: none;
+}
+
+section.flat button {
+  color: #fff;
+  background-color: #e08f25fb;
+  text-shadow: -1px 1px #ee1a4f;
+  border: none;
+  border-radius: 8px;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
