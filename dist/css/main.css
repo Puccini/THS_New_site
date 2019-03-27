@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
+
 .menu-btn .btn-line {
   width: 28px;
   height: 3px;
@@ -13,15 +14,19 @@
   background: #fff;
   transition: all 0.5s ease-out;
 }
+
 .menu-btn.close {
   transform: rotate(180deg);
 }
+
 .menu-btn.close .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .menu-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
+
 .menu-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
 }
@@ -33,9 +38,11 @@
   opacity: 0.9;
   visibility: hidden;
 }
+
 .menu.show {
   visibility: visible;
 }
+
 .menu-branding,
 .menu-nav {
   display: flex;
@@ -47,6 +54,7 @@
   height: 100vh;
   overflow: hidden;
 }
+
 .menu-nav {
   margin: 0;
   padding: 0;
@@ -55,17 +63,21 @@
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
 }
+
 .menu-nav.show {
   transform: translate3d(0, 0, 0);
 }
+
 .menu-branding {
   background: #444;
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
+
 .menu-branding.show {
   transform: translate3d(0, 0, 0);
 }
+
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
@@ -73,16 +85,20 @@
   border-radius: 50%;
   border: solid 3px #ee1a4f;
 }
+
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out;
 }
+
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
 }
-.menu .nav-item.current > a {
+
+.menu .nav-item.current>a {
   color: #ee1a4f;
 }
+
 .menu .nav-link {
   display: inline-block;
   position: relative;
@@ -94,6 +110,7 @@
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
+
 .menu .nav-link:hover {
   color: #ee1a4f;
 }
@@ -130,11 +147,13 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
+
 body#bg-img {
   background: url(../img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
+
 body#bg-img:after {
   content: "";
   position: absolute;
@@ -152,11 +171,13 @@ h3 {
   margin: 0;
   font-weight: 400;
 }
+
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
   font-size: 6rem;
 }
+
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
@@ -188,19 +209,24 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
 }
+
 main .icons {
   margin-top: 1rem;
 }
+
 main .icons a {
   padding: 0.4rem;
 }
+
 main .icons a:hover {
   color: #ee1a4f;
   transition: all 0.5s ease-out;
 }
+
 main#home {
   overflow: hidden;
 }
+
 main#home h1 {
   margin-top: 20vh;
 }
@@ -211,24 +237,30 @@ main#home h1 {
   grid-template-areas: "price1 price2 price3";
   grid-template: repeat(3, 1fr);
 }
+
 .cost-info .bio-image {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
   border: #ee1a4f 3px solid;
 }
+
 .cost-info .bio {
   grid-area: bio;
 }
+
 .cost-info .price-1 {
   grid-area: price1;
 }
+
 .cost-info .price-2 {
   grid-area: price2;
 }
+
 .cost-info .price-3 {
   grid-area: price3;
 }
+
 .cost-info .price {
   text-align: center;
   background: #515151;
@@ -239,27 +271,33 @@ main#home h1 {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio""job1 job2 job3";
   grid-template: repeat(3, 1fr);
 }
+
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
   border: #ee1a4f 3px solid;
 }
+
 .about-info .bio {
   grid-area: bio;
 }
+
 .about-info .job-1 {
   grid-area: job1;
 }
+
 .about-info .job-2 {
   grid-area: job2;
 }
+
 .about-info .job-3 {
   grid-area: job3;
 }
+
 .about-info .job {
   text-align: center;
   background: #515151;
@@ -272,10 +310,12 @@ main#home h1 {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 }
+
 .projects img {
   width: 100%;
   border: 3px #fff solid;
 }
+
 .projects img:hover {
   opacity: 0.5;
   border-color: #ee1a4f;
@@ -289,6 +329,7 @@ main#home h1 {
   align-items: center;
   margin-top: 1rem;
 }
+
 .boxes div {
   font-size: 2rem;
   border: 3px #fff solid;
@@ -296,11 +337,13 @@ main#home h1 {
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
 }
+
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
   background: #ee1a4f;
   color: #000;
 }
+
 .boxes div:hover span {
   color: #000;
 }
@@ -313,6 +356,7 @@ main#home h1 {
   border: 0;
   margin-bottom: 0.3rem;
 }
+
 .btn:hover,
 .btn-dark:hover,
 .btn-light:hover {
@@ -341,13 +385,14 @@ button {
   box-shadow: none;
   border-radius: 0;
 }
+
 button:focus {
   outline: none;
 }
 
 section.flat button {
   color: #fff;
-  background-color: #e08f25fb;
+  background-color: #ee1a4f;
   text-shadow: -1px 1px #ee1a4f;
   border: none;
   border-radius: 8px;
@@ -378,41 +423,48 @@ section.flat button {
     align-items: center;
     text-align: center;
   }
+
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
   }
+
   ul.menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
   }
+
   ul.menu-nav.show,
   div.menu-branding.show {
     transform: translate3d(0, 0, 0);
   }
+
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
+
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
   }
+
   .menu-branding .portrait {
     background: url(../img/portrait_small.jpg);
     width: 150px;
     height: 150px;
   }
+
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage""bio""job1""job2""job3";
     grid-template-columns: 1fr;
   }
 
   .cost-info {
-    grid-template-areas: "price1" "price2" "price3";
+    grid-template-areas: "price1""price2""price3";
     grid-template-columns: 1fr;
   }
 
@@ -425,6 +477,7 @@ section.flat button {
   main#home {
     margin-top: 10vh;
   }
+
   .projects {
     grid-template-columns: 1fr;
   }
