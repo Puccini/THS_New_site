@@ -162,7 +162,7 @@ body#bg-img-1 {
 
 body#bg-img:after {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
@@ -173,7 +173,7 @@ body#bg-img:after {
 
 body#bg-img-1:after {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
@@ -407,7 +407,7 @@ button:focus {
   outline: none;
 }
 
-section.flat button {
+.flat button {
   color: #fff;
   background-color: #ee1a4f;
   text-shadow: -1px 1px #ee1a4f;
