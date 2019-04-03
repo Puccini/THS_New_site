@@ -410,7 +410,7 @@ button:focus {
   outline: none;
 }
 
-.flat button {
+section.flat button {
   color: #fff;
   background-color: #ee1a4f;
   text-shadow: -1px 1px #ee1a4f;
