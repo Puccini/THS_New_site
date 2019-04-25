@@ -10,6 +10,23 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
   <title>Tech Help Spain</title>
+  <link rel="stylesheet" type="text/css"
+    href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#f1d600"
+          }
+        }
+      })
+    });
+  </script>
 </head>
 
 <body id="bg-img">
@@ -65,7 +82,7 @@
       Web Development, Telecoms, Tech Support & Advice
     </h2>
     <section class="flat">
-      <a href='pricing.html'><button type="button">Check our Prices!</button></a>
+      <a href='pricing.html'><button type="button">Check Prices!</button></a>
     </section>
 
 
