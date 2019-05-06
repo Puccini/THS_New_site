@@ -385,12 +385,12 @@ main#home h1 {
 }
 
 .btn-dark {
-  background: black;
+  background: #ee1a4f;
   color: #fff;
 }
 
 .btn-light {
-  background: #e7e2e2;
+  background: #fff;
   color: #333;
 }
 
